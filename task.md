@@ -1,0 +1,33 @@
+# ISO/IEC 42001 Teknik Rehber Sitesi - Geliştirme Görev Listesi
+
+- [x] Projenin Vite, React, TypeScript ile başlatılması ve temel klasör yapısının kurulması
+- [x] Veri modellerinin (`src/types/domain.ts`) tanımlanması
+- [x] ISO/IEC 42001 ve MLOps ilişkili statik içerik veri dosyalarının oluşturulması
+  - [x] Aşamalar ve faaliyetler verisi (`src/data/model.ts`)
+  - [x] Standardın maddeleri ve eşleşmeler verisi (`src/data/mappings.ts`)
+  - [x] Terimler sözlüğü verisi (`src/data/glossary.ts`)
+- [x] Ortak kancalar (hooks) ve durum servislerinin geliştirilmesi
+  - [x] `useLocalStorage` kancası (`src/hooks/useLocalStorage.ts`)
+  - [x] `useChecklist` kancası (`src/hooks/useChecklist.ts`)
+  - [x] Dışa/İçe aktarma ve yazdırma servisleri (`src/services/exportService.ts`)
+- [x] Tasarım sistemi ve küresel CSS'in yazılması (`src/index.css`)
+- [x] Yönlendirme (Routing) altyapısının kurulması (`src/app/router.tsx` & `src/main.tsx`)
+- [x] Arayüz bileşenlerinin geliştirilmesi
+  - [x] Küresel navigasyon ve sayfa yerleşimi (Layout, Navbar, Footer)
+  - [x] Etkileşimli akış şeması bileşeni (Flowchart/Model Overview)
+  - [x] ISO madde detay modal/panel kartları
+  - [x] Checklist filtreleme ve durum yönetim paneli
+- [x] Sayfaların kodlanması
+  - [x] Ana Sayfa (`HomePage.tsx`)
+  - [x] Model Genel Görünüm Sayfası (`ModelPage.tsx`)
+  - [x] Aşama Sayfası (`StagePage.tsx`)
+  - [x] Teknik Faaliyet Detay Sayfası (`ActivityPage.tsx`)
+  - [x] Eşleştirme Sayfası (`MappingPage.tsx`)
+  - [x] Checklist Sayfası (`ChecklistPage.tsx`)
+  - [x] Kanıt ve Artefakt Sayfası (`EvidencePage.tsx`)
+  - [x] Terimler Sözlüğü, Metodoloji, Sınırlılıklar ve Kaynakça sayfaları
+- [x] GitHub Pages ve GitHub Actions dağıtım yapılandırması
+- [x] Test senaryolarının yazılması ve doğrulanması
+- [x] Walkthrough dokümanının oluşturulması ve raporlanması
+- [x] Açık renk teması geçişi (mavi, turuncu ve yeşil ağırlıklı)
+- [x] Çoklu dil desteğinin (TR/EN) ve dil geçici butonunun entegrasyonu
