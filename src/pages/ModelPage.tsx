@@ -2,44 +2,20 @@ import { Link } from "react-router-dom";
 import { modelData } from "../data/model";
 import { useLanguage } from "../context/LanguageContext";
 import { InteractiveText } from "../components/InteractiveText";
-import {
-  Database,
-  Cpu,
-  ShieldAlert,
-  Share2,
-  LineChart,
-  RefreshCw,
-  FileText,
-  Settings,
-  ArrowRight,
-  HelpCircle
-} from "lucide-react";
+import stage1 from "../assets/1.png";
+import stage2 from "../assets/2.png";
+import stage3 from "../assets/3.png";
+import stage4 from "../assets/4.png";
+import stage5 from "../assets/5.png";
+import stage6 from "../assets/6.png";
+import stage7 from "../assets/7.png";
+import stage8 from "../assets/8.png";
+import { ArrowRight } from "lucide-react";
+
+const stageImages = [stage1, stage2, stage3, stage4, stage5, stage6, stage7, stage8];
 
 export function ModelPage() {
   const { language, t } = useLanguage();
-
-  const getStageIcon = (slug: string) => {
-    switch (slug) {
-      case "data-collection-preparation":
-        return <Database size={24} />;
-      case "model-development":
-        return <Cpu size={24} />;
-      case "validation-testing":
-        return <ShieldAlert size={24} />;
-      case "deployment":
-        return <Share2 size={24} />;
-      case "monitoring":
-        return <LineChart size={24} />;
-      case "feedback-improvement":
-        return <RefreshCw size={24} />;
-      case "governance-risk-management":
-        return <Settings size={24} />;
-      case "documentation":
-        return <FileText size={24} />;
-      default:
-        return <HelpCircle size={24} />;
-    }
-  };
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "30px" }} className="fade-in">
@@ -76,10 +52,20 @@ export function ModelPage() {
                 {/* Step Circle */}
                 <div className="flowchart-icon-box" style={{
                   borderColor: isHorizontalDoc ? "#ffff00ff" : "#ffffffff",
-                  color: isHorizontalDoc ? "#ffff00ff" : "#ffffffff",
-                  boxShadow: isHorizontalDoc ? "0 0 15px #ffff00ff" : "0 0 15px rgba(2, 2, 2, 0.2)"
+                  boxShadow: isHorizontalDoc ? "0 0 15px #ffff00ff" : "0 0 15px rgba(2, 2, 2, 0.2)",
+                  overflow: "hidden",
+                  padding: 0
                 }}>
-                  {getStageIcon(stage.slug)}
+                  <img
+                    src={stageImages[stage.order - 1]}
+                    alt={`${t(stage.title)} illustration`}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      display: "block"
+                    }}
+                  />
                 </div>
 
                 {/* Step Details */}

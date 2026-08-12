@@ -514,7 +514,7 @@ export function ActivityPage() {
                   </p>
                   <p style={{ marginBottom: "10px" }}>
                     {{
-                      tr: "2. YZ sisteminin genel yapısını ve güvenlik sınırlarını açıklayan Sistem Kartı (System Card) kurumsal portalda yayımlanır.",
+                      tr: "2. YZ sisteminin genel yapısını ve güvenlik sınırlarını açıklayan Sistem Kartı kurumsal portalda yayımlanır.",
                       en: "2. Publish System Cards detailing architecture constraints and security bounds."
                     }[language]}
                   </p>

@@ -368,7 +368,7 @@ const BILINGUAL_DICTIONARY: Record<string, DictionaryEntry> = {
   "System Card": {
     numWords: 2,
     tr: {
-      title: "Sistem Kartı (System Card)",
+      title: "Sistem Kartı",
       description: "Yapay zekâ sisteminin genel amacını, mimarisini, veri kullanımını, sınırlarını ve alınan güvenlik önlemlerini açıklayan şeffaflık dokümanı.",
       examples: "Örnek: Model Cards, OpenAI GPT-4 System Card."
     },
@@ -616,8 +616,8 @@ export function InteractiveText({ text }: InteractiveTextProps) {
         const dynamicEntry: DictionaryDetails = {
           title: language === "tr" ? "Terim Tanımı" : "Term Definition",
           description: language === "tr" 
-            ? `İngilizce / Açıklama: ${innerContent}` 
-            : `Meaning / Explanation: ${innerContent}`
+            ? `${innerContent}` 
+            : `${innerContent}`
         };
 
         nodes.push(
