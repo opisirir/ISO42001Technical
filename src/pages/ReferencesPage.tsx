@@ -26,8 +26,7 @@ export function ReferencesPage() {
         </h2>
         <div style={{ background: "hsl(var(--bg-primary))", padding: "20px", borderRadius: "8px", border: "1px solid rgba(0,0,0,0.05)", marginBottom: "20px" }}>
           <p style={{ fontFamily: "monospace", fontSize: "0.95rem", color: "var(--text-primary)", lineHeight: 1.5 }}>
-            Pişirir, O. M. (2026). ISO/IEC 42001:2023 Kapsamında Yapay Zekâ Yönetim Sistemleri: Teknik Süreçler ve Operasyonel Bir Model. 
-            <em> Adv. Artif. Intell. Res.</em>, 5(1), 14-22.
+            ---
           </p>
         </div>
         <p style={{ color: "var(--text-secondary)", fontSize: "0.92rem", lineHeight: 1.5 }}>

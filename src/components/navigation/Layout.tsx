@@ -222,12 +222,12 @@ export function Layout({ children }: LayoutProps) {
               </h4>
               <p style={{ lineHeight: 1.5, marginBottom: "10px" }}>
                 {{
-                  tr: "Bu çalışma, Dr. Onur Mahmut Pişirir tarafından hazırlanan \"ISO/IEC 42001:2023 Kapsamında Yapay Zekâ Yönetim Sistemleri: Teknik Süreçler ve Operasyonel Bir Model\" başlıklı bilimsel makaleyi temel almaktadır.",
-                  en: "This work is based on the research paper \"Artificial Intelligence Management Systems Under ISO/IEC 42001:2023: Technical Processes and an Operational Model\" authored by Dr. Onur Mahmut Pişirir."
+                  tr: "Bu çalışma, Dr. Onur Mahmut Pişirir tarafından hazırlanan \"ISO/IEC 42001:2023 Kapsamında Yapay Zekâ Yönetim Sistemleri: Teknik Süreçler ve Operasyonel Bir Model\" başlıklı çalışmayı temel almaktadır.",
+                  en: "This work is based on the study \"Artificial Intelligence Management Systems Under ISO/IEC 42001:2023: Technical Processes and an Operational Model\" authored by Dr. Onur Mahmut Pişirir."
                 }[language]}
               </p>
               <Link to="/methodology" style={{ fontWeight: 600, display: "inline-flex", alignItems: "center", gap: "4px" }}>
-                {{ tr: "Metodoloji & Akademik Atıf →", en: "Methodology & Citation →" }[language]}
+                {{ tr: "Metodoloji ve Akademik Atıf →", en: "Methodology & Citation →" }[language]}
               </Link>
             </div>
 
@@ -236,7 +236,7 @@ export function Layout({ children }: LayoutProps) {
                 {{ tr: "Hızlı Bağlantılar", en: "Quick Links" }[language]}
               </h4>
               <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "8px" }}>
-                <li><Link to="/methodology" style={{ color: "var(--text-secondary)" }}>{{ tr: "Metodoloji & Tasarım Bilgisi", en: "Methodology & Design" }[language]}</Link></li>
+                <li><Link to="/methodology" style={{ color: "var(--text-secondary)" }}>{{ tr: "Metodoloji ve Tasarım Bilgisi", en: "Methodology & Design" }[language]}</Link></li>
                 <li><Link to="/references" style={{ color: "var(--text-secondary)" }}>{{ tr: "Akademik ve Normatif Kaynaklar", en: "References & Standards" }[language]}</Link></li>
                 <li><Link to="/limitations" style={{ color: "var(--text-secondary)" }}>{{ tr: "Sınırlılıklar & Yasal Sorumluluk Reddi", en: "Limitations & Disclaimer" }[language]}</Link></li>
               </ul>
@@ -269,8 +269,8 @@ export function Layout({ children }: LayoutProps) {
           }}>
             <span>
               {{
-                tr: "© 2026 ISO/IEC 42001 MLOps Teknik Entegrasyon Rehberi. Tüm Hakları Saklıdır.",
-                en: "© 2026 ISO/IEC 42001 MLOps Technical Integration Guide. All Rights Reserved."
+                tr: "2026 ISO/IEC 42001 MLOps Teknik Entegrasyon Rehberi.",
+                en: "2026 ISO/IEC 42001 MLOps Technical Integration Guide."
               }[language]}
             </span>
             <div style={{ display: "flex", gap: "15px" }}>

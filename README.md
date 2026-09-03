@@ -1,32 +1,38 @@
-# React + TypeScript + Vite
+# ISO/IEC 42001 & MLOps Technical Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An experimental, interactive study of how ISO/IEC 42001:2023 requirements can be related to practical machine-learning operations (MLOps).
 
-Currently, two official plugins are available:
+The site presents an eight-stage MLOps model, an ISO clause mapping matrix, a technical checklist, evidence and artifact examples, a glossary, methodology notes, references, and known limitations. It is available in English and Turkish. Checklist progress is stored locally in the browser and can be exported for further study.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Purpose
 
-## React Compiler
+This project is a research and learning artifact. It explores a practical interpretation of AI management system concepts for engineering workflows and is intended to make those relationships easier to inspect and discuss.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+It is **not** an official ISO publication, certification tool, audit checklist, legal opinion, or compliance determination. The official ISO/IEC 42001 standard and qualified professional advice must be used for real compliance work.
 
-## Expanding the Oxlint configuration
+## Visit the site
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+The application is published with GitHub Pages:
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+`https://<github-username>.github.io/ISO42001Technical/`
+
+The exact URL depends on the GitHub account or organization that owns the repository.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+To create a production build:
+
+```bash
+npm run build
+```
+
+The project uses React, TypeScript, Vite, React Router, and Vitest.
+
+## License and source material
+
+This repository contains an experimental interpretation and does not reproduce the ISO/IEC 42001 standard. Refer to the official standard for authoritative requirements.
