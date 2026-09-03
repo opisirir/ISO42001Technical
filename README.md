@@ -14,7 +14,7 @@ It is **not** an official ISO publication, certification tool, audit checklist, 
 
 The application is published with GitHub Pages:
 
-`https://<github-username>.github.io/ISO42001Technical/`
+`https://opisirir.github.io/ISO42001Technical/`
 
 The exact URL depends on the GitHub account or organization that owns the repository.
 
